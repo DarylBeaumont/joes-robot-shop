@@ -188,6 +188,20 @@ export class CatalogueComponent {
     ];
   }
 
+  getDiscountedStyling(discount: number){
+    if(discount > 0)
+      return { 'color' : 'red' };
+    else
+      return {};
+  }
+
+  getDiscountedClasses(product: IProduct) {
+    if(product.discount > 0)
+      return 'strikethrough';
+    else
+      return ['strikethrough', 'bold'];
+  }
+
   getImageUrl(imageName: string): string {
     return "/assets/images/robot-parts/" + imageName;
   }

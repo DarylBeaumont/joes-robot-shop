@@ -19,7 +19,12 @@
             </div>
           </div>
           <div class="price">
-            <div *ngIf="product.discount === 0">{{ product.price | currency:'GBP' }}</div>
+            <div 
+              [ngStyle]="getDiscountedStyling(product.discount)"
+              [ngClass]="getDiscountedClasses(product)"
+            >
+              {{ product.price | currency:'GBP' }}
+            </div>
             <div *ngIf="product.discount > 0" class="discount">
                 {{ (product.price * (1 - product.discount)) | currency:'GBP' }}
             </div>
