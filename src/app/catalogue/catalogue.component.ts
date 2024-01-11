@@ -31,6 +31,5 @@ export class CatalogueComponent {
 
   addToCart(product: IProduct) {
     this.cartSvc.add(product);
-    console.log(`Product '${product.name}' added to cart.`);
   }
 }
