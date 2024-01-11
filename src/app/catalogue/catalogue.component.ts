@@ -18,15 +18,15 @@ export class CatalogueComponent {
   }
 
   ngOnInit(){
-    this.productSvc.getProducts().subscribe(products => {
+    this.productSvc.getProducts().subscribe((products:any) => {
       this.products = products;
-    });
+    })
   }
 
   getFilteredProducts() {
     return this.filter === ''
       ? this.products
-      : this.products.filter((product) => product.category === this.filter)
+      : this.products.filter((product: any) => product.category === this.filter)
   }
 
   addToCart(product: IProduct) {
