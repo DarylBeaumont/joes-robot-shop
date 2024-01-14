@@ -15,25 +15,25 @@
   
     <ul class="robot-parts-cta">
       <li>
-        <a class="part">
+        <a routerLink="/catalogue" [queryParams]="{filter: 'Heads'}" class="part">
           <img src="/assets/images/robot-parts/head-single-eye.png" alt="Robot Heads" />
           <div>ROBOT HEADS</div>
         </a>
       </li>
       <li>
-        <a class="part">
+        <a routerLink="/catalogue" [queryParams]="{filter: 'Arms'}" class="part">
           <img src="/assets/images/robot-parts/arm-articulated-claw.png" alt="Robot Arms" />
           <div>ROBOT ARMS</div>
         </a>
       </li>
       <li>
-        <a class="part">
+        <a routerLink="/catalogue" [queryParams]="{filter: 'Torsos'}" class="part">
           <img src="/assets/images/robot-parts/torso-flexible-gauged.png" alt="Robot Torsos" />
           <div>ROBOT TORSOS</div>
         </a>
       </li>
       <li>
-        <a class="part">
+        <a routerLink="/catalogue" [queryParams]="{filter: 'Bases'}" class="part">
           <img src="/assets/images/robot-parts/base-double-wheel.png" alt="Robot Bases" />
           <div>ROBOT BASES</div>
         </a>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="large-text">WHITE PAPER</div>
-        <a href="" class="learn-more">Learn More</a>
+        <a routerLink="/catalogue" href="" class="learn-more">Learn More</a>
       </div>
     </div>
   </div>
